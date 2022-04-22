@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font: normal 20pt arial;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var nome = window.prompt("qual é seu nome?");
+      document.write(`olá, seu nome tem ${nome.length} letras. </br>`); // contador de strings
+      document.write(`seu nome em maiúsculas é ${nome.toUpperCase()} </br>`); //comando em maiúsculo
+      document.write(`seu nome em minúsculas é ${nome.toLowerCase()}</br>`); // comando em minusculo
+      var nome = "gustavo";
+      var idade = 24;
+      var salario = 1600.5;
+      //teste abaixo
+      document.write(
+        `olá, me chamo ${nome}, tenho ${idade} anos de idade e recebo um salario de ${salario} reais por mês.`
+      );
+      salario.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+    </script>
+  </body>
+</html>
