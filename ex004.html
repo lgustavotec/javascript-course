@@ -24,6 +24,7 @@
       document.write(
         `olá, me chamo ${nome}, tenho ${idade} anos de idade e recebo um salario de ${salario} reais por mês.`
       );
+      salario.toFixed(2);
       salario.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
     </script>
   </body>
