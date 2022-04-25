@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordem de precedência</title>
+    <style>
+      div {
+        margin: 0 auto;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        text-align: center;
+        text-shadow: 1px 1px 2px black;
+      }
+
+      li {
+        height: 20px;
+        text-shadow: 1px 1px 1px black;
+        padding: 8px;
+      }
+
+      .number1 {
+        background-color: red;
+      }
+
+      .number2 {
+        background-color: blue;
+      }
+
+      .number3 {
+        background-color: pink;
+      }
+
+      .number4 {
+        background-color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Ordem de Precedência</h1>
+
+      <ol>
+        <li class="number1">( )</li>
+        <li class="number2">**</li>
+        <li class="number3">* / %</li>
+        <li class="number4">+ -</li>
+      </ol>
+    </div>
+  </body>
+</html>
