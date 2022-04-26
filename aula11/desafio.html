@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+  </head>
+  <body>
+    <h1>Sistema de Estrangeiros.</h1>
+    <input type="text" id="nome-pais" />
+    <input type="button" value="verificar" onclick="capturarValorInput()" />
+    <div id="saida-aviso"></div>
+
+    <script>
+      function verificarNacionalidade() {}
+
+      function capturarValorInput() {
+        var input = window.document.querySelector("input#nome-pais");
+
+        var saidaAviso = window.document.querySelector("#saida-aviso");
+        var paisUsuario = input.value.toLowerCase();
+        if (paisUsuario === "brasil") {
+          saidaAviso.innerHTML = "Você é Brasileiro";
+        } else if (paisUsuario === "portugal") {
+          saidaAviso.innerHTML = "Você é português";
+        } else {
+          saidaAviso.innerHTML = "Você é Estrangeiro!";
+        }
+      }
+    </script>
+  </body>
+</html>
+<!--
+
+  capturar valor
+  saber se é brasileiro ou estrangeiro
+  mostrar o resultado na linha abaixo
+
+
+  if (talCoisa === outraCoisa) {
+    faça isso
+  } else if (talCoisa === maisOutraCoisa) {
+    faça isso
+  } else {
+    faça isso
+  }
+-->
