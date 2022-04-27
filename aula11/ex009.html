@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nacionalidade</title>
+  </head>
+  <body>
+    <h1>Nacionalidade</h1>
+    Nascidos em <input type="text" name="pais" id="pais" />
+    <input type="button" value="descobrir" onclick="descobrir()" />
+    <div id="nacionalidade">Nacionalidade</div>
+
+    <script>
+      function descobrir() {
+        var text1 = window.document.querySelector("input#pais");
+        var res = window.document.querySelector("div#nacionalidade");
+        if (text1.value === "Brasil") {
+          res.innerHTML = `Voce é brasileiro`;
+        } else {
+          res.innerHTML = "voce é Estrangeiro";
+        }
+      }
+    </script>
+  </body>
+</html>
