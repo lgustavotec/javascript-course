@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculadora</title>
+    <style>
+      body {
+        max-width: 1000px;
+        display: flex;
+        margin: 20px 20px 20px 20px;
+        font-size: 16pt;
+      }
+      .principal {
+        background: rgb(56, 104, 153);
+        padding: 12px;
+        border: 2px solid black;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-shadow: 1px 1px 2px black;
+      }
+
+      div#resultado {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="principal">
+      <h1>Calculadora Simples</h1>
+      <input type="number" id="number1" /> +
+
+      <input type="number" id="number2" /> =
+
+      <input type="button" value="enter" onclick="enter()" />
+      <div id="resultado"><strong>Resultado</strong></div>
+
+      <script>
+        function enter() {
+          var numb1 = window.document.querySelector("input#number1");
+          var numb2 = window.document.querySelector("input#number2");
+          var resultado = window.document.querySelector("div#resultado");
+          var n1 = Number(numb1.value);
+          var n2 = Number(numb2.value);
+          var soma = n1 + n2;
+          resultado.innerHTML = `${n1} + ${n2} = <strong>${soma} </strong> `;
+        }
+      </script>
+    </div>
+  </body>
+</html>
