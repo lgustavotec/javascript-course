@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: 0 auto;
+      }
+
+      #area {
+        box-shadow: 4px 4px 8px black;
+        border-left: solid 4px orangered;
+        border-radius: 16px;
+        background-color: rgb(85, 197, 241);
+        font: normal 20pt arial;
+        text-shadow: 1px 1px 4px black;
+        height: 200px;
+        width: 200px;
+        line-height: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="area"
+      onclick="clicar()"
+      onmouseenter="entrar()"
+      onmouseout="sair()"
+    >
+      Passe o mouse
+    </div>
+
+    <script>
+      let area = window.document.querySelector("div#area");
+      /* em forma de lista fora do html
+        area.addEventListener("onclick", clicar);
+        area.addEventListener("mouseenter", entrar);
+        area.addEventListener("onmouseout", sair);
+      */
+
+      function clicar() {
+        area.innerHTML = "Clicou!";
+        area.style.background = "gray";
+      }
+
+      function entrar() {
+        area.innerHTML = "Entrou!";
+      }
+
+      function sair() {
+        area.innerHTML = "Saiu! ):";
+        area.style.background = "rgb(85, 197, 241)";
+      }
+    </script>
+  </body>
+</html>
